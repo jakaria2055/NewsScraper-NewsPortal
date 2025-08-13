@@ -12,7 +12,7 @@ router.get("/UserLogin/:email/:otp", UserLogin);
 
 //CRUD OPERATION IN BLOG
 router.post("/CreateNews", AuthVerification, CreateNews);
-router.get("/ReadNews", AuthVerification, ReadNews);
+router.get("/ReadNews", ReadNews);
 router.put("/EditNews/:newsId", AuthVerification, EditNews);
 router.delete("/DeleteNews/:newsId", AuthVerification, DeleteNews);
 

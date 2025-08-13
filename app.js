@@ -5,6 +5,7 @@ import cors from "cors";
 import hpp from "hpp";
 import rateLimit from "express-rate-limit";
 import router from "./src/routes/api.js";
+import path from "path";
 
 
 const app = express();
@@ -31,9 +32,6 @@ const limiter = rateLimit({
 app.use(limiter);
 app.set("etag", false);
 app.use('/api/v1', router);
-
-
-
 
 
 app.use(express.static('client/dist'));
