@@ -7,7 +7,6 @@ import rateLimit from "express-rate-limit";
 import router from "./src/routes/api.js";
 import path from "path";
 
-import path from "path";
 import { fileURLToPath } from "url";
 
 const __filename = fileURLToPath(import.meta.url);
